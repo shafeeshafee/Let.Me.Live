@@ -2,3 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.rally {
+	background-image: url("https://images.pexels.com/photos/4508668/pexels-photo-4508668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+.shadowed {
+	filter: drop-shadow(2px 4px 4px #000000);
+}
+
+.smoothed {
+	@apply transition ease-in-out;
+}
+
+.makeEven {
+	@apply text-justify pb-1;
+}
+
+.subtitle {
+	@apply font-bold text-lg text-justify pt-1;
+}
+
+.truncated {
+	width: auto;
+	overflow: auto;
+	line-height: 1.8rem;
+	max-height: 8rem;
+	-webkit-box-orient: vertical;
+	display: block;
+	display: -webkit-box;
+	margin: 1rem 0;
+	padding-right: 2em;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 4;
+}
