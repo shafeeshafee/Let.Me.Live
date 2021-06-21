@@ -19,7 +19,7 @@ function AllReports() {
 			<h1 className="text-6xl font-bold font-bodySans py-10">Community Reports</h1>
 			<div className="border flex p-3 flex-wrap">
 				{reportData.map((report) => (
-					<div className="flex w-1/3 p-10 text-left">
+					<div className="flex flex-wrap xl:w-1/3 p-10 text-left">
 						<ReportCard {...report} />
 					</div>
 				))}

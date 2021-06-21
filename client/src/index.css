@@ -38,5 +38,5 @@
 }
 
 .submit-subtitle {
-	@apply flex flex-col w-1/4 m-auto text-shockingYellow text-3xl text-left py-5 font-bold leading-10;
+	@apply flex flex-col px-10 xl:px-0 lg:w-1/4 m-auto text-shockingYellow text-3xl text-left py-5 font-bold leading-10;
 }

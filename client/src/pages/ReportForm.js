@@ -13,7 +13,7 @@ function ReportForm() {
 						<p className="mb-3">What happened?</p>
 						<span className="text-sm text-gray-400">Describe the incident.</span>
 					</div>
-					<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
 				</div>
 				{/* where it happened */}
 				<div className="submit-subtitle">
@@ -29,7 +29,7 @@ function ReportForm() {
 						<p className="mb-3">How did this incident make you feel?</p>
 						<span className="text-sm text-gray-400">Be honest about your experience. Let the world hear.</span>
 					</div>
-					<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
 				</div>
 				{/* sought resources */}
 				<div className="submit-subtitle">
@@ -51,7 +51,7 @@ function ReportForm() {
 						<p className="mb-3">What would you like done about this?</p>
 						<span className="text-sm text-gray-400">Preach.</span>
 					</div>
-					<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
 				</div>
 			</form>
 			<div className="border-t-2 py-3 w-1/12 m-auto"></div>
