@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import Slide from "react-reveal/Slide";
 
 function ReportForm() {
 	const [data, setData] = useState({
@@ -51,65 +52,95 @@ function ReportForm() {
 			</div>
 
 			<form>
-				{/* what happened */}
-				<div className="submit-subtitle">
-					<div className="makeEven mb-2 flex flex-col items-start justify-center">
-						<p className="mb-3">What happened?</p>
-						<span className="text-sm text-gray-400">Describe the incident.</span>
+				<Slide bottom>
+					{/* what happened */}
+					<div className="submit-subtitle">
+						<div className="makeEven mb-2 flex flex-col items-start justify-center">
+							<p className="mb-3">What happened?</p>
+							<span className="text-sm text-gray-400">Describe the incident.</span>
+						</div>
+						<textarea
+							onChange={(e) => setIncidentInfo(e.target.value)}
+							className="text-jetblack text-2xl"
+							name="w3review"
+							rows="4"
+							cols="50"
+						></textarea>
 					</div>
-					<textarea
-						onChange={(e) => setIncidentInfo(e.target.value)}
-						className="text-jetblack"
-						name="w3review"
-						rows="4"
-						cols="50"
-					></textarea>
-				</div>
-				{/* where it happened */}
-				<div className="submit-subtitle">
-					<div className="makeEven mb-2 flex flex-col items-start justify-between">
-						<p className="mb-3">Where did it take place?</p>
-						<span className="text-sm text-gray-400">We recommend vague information like zipcodes and not addresses.</span>
+					{/* where it happened */}
+					<div className="submit-subtitle">
+						<div className="makeEven mb-2 flex flex-col items-start justify-between">
+							<p className="mb-3">Where did it take place?</p>
+							<span className="text-sm text-gray-400">We recommend vague information like zipcodes and not addresses.</span>
+						</div>
+						<input className="text-jetblack text-2xl" onChange={(e) => setLocationInfo(e.target.value)} type="text" />
 					</div>
-					<input onChange={(e) => setLocationInfo(e.target.value)} type="text" />
-				</div>
-				{/* how it made u feel */}
-				<div className="submit-subtitle">
-					<div className="makeEven mb-2 flex flex-col items-start justify-center">
-						<p className="mb-3">How did this incident make you feel?</p>
-						<span className="text-sm text-gray-400">Be honest about your experience. Let the world hear.</span>
+					{/* how it made u feel */}
+					<div className="submit-subtitle">
+						<div className="makeEven mb-2 flex flex-col items-start justify-center">
+							<p className="mb-3">How did this incident make you feel?</p>
+							<span className="text-sm text-gray-400">Be honest about your experience. Let the world hear.</span>
+						</div>
+						<textarea
+							className="text-jetblack text-2xl"
+							onChange={(e) => setFeelingInfo(e.target.value)}
+							className=""
+							name="w3review"
+							rows="4"
+							cols="50"
+						></textarea>
 					</div>
-					<textarea onChange={(e) => setFeelingInfo(e.target.value)} className="" name="w3review" rows="4" cols="50"></textarea>
-				</div>
-				{/* sought resources */}
-				<div className="submit-subtitle">
-					<div className="makeEven mb-2 flex flex-col items-start justify-between">
-						<p className="mb-3">Have you sought help for this problem?</p>
-						<span className="text-sm text-gray-400">It's okay if you didn't. We know it can be difficult.</span>
+					{/* sought resources */}
+					<div className="submit-subtitle">
+						<div className="makeEven mb-2 flex flex-col items-start justify-between">
+							<p className="mb-3">Have you sought help for this problem?</p>
+							<span className="text-sm text-gray-400">It's okay if you didn't. We know it can be difficult.</span>
+						</div>
+						<div className="flex items-center">
+							<input
+								className="text-jetblack text-2xl"
+								onChange={(e) => setSoughtHelpInfo(e.target.value)}
+								className="m-3"
+								type="radio"
+								value="Yes"
+								name="choice"
+							/>
+							<p className="text-offwhite text-2xl">Yes</p>
+							<br />
+							<input
+								className="text-jetblack text-2xl"
+								onChange={(e) => setSoughtHelpInfo(e.target.value)}
+								className="m-3"
+								type="radio"
+								value="No"
+								name="choice"
+							/>
+							<p className="text-offwhite text-2xl">No</p>
+						</div>
 					</div>
-					<div className="flex items-center">
-						<input onChange={(e) => setSoughtHelpInfo(e.target.value)} className="m-3" type="radio" value="Yes" name="choice" />
-						<p className="text-offwhite text-2xl">Yes</p>
-						<br />
-						<input onChange={(e) => setSoughtHelpInfo(e.target.value)} className="m-3" type="radio" value="No" name="choice" />
-						<p className="text-offwhite text-2xl">No</p>
+					{/* next steps */}
+					<div className="submit-subtitle">
+						<div className="makeEven mb-2 flex flex-col items-start justify-center">
+							<p className="mb-3">What would you like done about this?</p>
+							<span className="text-sm text-gray-400">Preach.</span>
+						</div>
+						<textarea
+							className="text-jetblack text-2xl"
+							onChange={(e) => setNextSteps(e.target.value)}
+							className=""
+							name="w3review"
+							rows="4"
+							cols="50"
+						></textarea>
 					</div>
-				</div>
-				{/* next steps */}
-				<div className="submit-subtitle">
-					<div className="makeEven mb-2 flex flex-col items-start justify-center">
-						<p className="mb-3">What would you like done about this?</p>
-						<span className="text-sm text-gray-400">Preach.</span>
-					</div>
-					<textarea onChange={(e) => setNextSteps(e.target.value)} className="" name="w3review" rows="4" cols="50"></textarea>
-				</div>
-				<div className="border-t-2 py-3 w-1/12 m-auto"></div>
-				<button
-					onClick={handleSubmit}
-					className="mt-5 bg-primaryYellow text-jetblack hover:bg-jetblack hover:text-offwhite smoothed font-bold py-3 px-5 rounded"
-				>
-					Submit
-				</button>
+					<div className="border-t-2 py-3 w-1/12 m-auto"></div>
+					<button
+						onClick={handleSubmit}
+						className="mt-5 bg-primaryYellow text-jetblack hover:bg-jetblack hover:text-offwhite smoothed font-bold py-3 px-5 rounded"
+					>
+						Submit
+					</button>
+				</Slide>
 			</form>
 		</div>
 	);
