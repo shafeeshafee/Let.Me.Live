@@ -14,11 +14,11 @@ const createReport = async (req, res) => {
 		const report = await new ReportModel(req.body);
 		await report.save();
 
-		return res.status(200).json({
-			report,
-		});
+		console.log(req.body);
+
+		return res.status(200).send(report);
 	} catch (err) {
-		return res.status(500).json({ error: `${error}` });
+		return res.status(500).json({ error: `${err}` });
 	}
 };
 

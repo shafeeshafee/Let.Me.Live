@@ -15,7 +15,7 @@ const reportSchema = new Schema({
 		required: true,
 	},
 	soughtResources: {
-		type: Boolean,
+		type: String,
 		required: true,
 	},
 	plan: {
