@@ -7,6 +7,13 @@
 	background-image: url("https://images.pexels.com/photos/4508668/pexels-photo-4508668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
+.protest {
+	background-image: url("backgroundImage/about-header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .shadowed {
 	filter: drop-shadow(2px 4px 4px #000000);
 }
