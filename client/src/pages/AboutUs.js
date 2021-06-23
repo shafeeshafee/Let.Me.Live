@@ -17,23 +17,25 @@ function AboutUs() {
 				<h1 className="text-6xl font-bold font-bodySans">About LET. ME. LIVE</h1>
 				<p className="pt-3 text-bg-charcoal text-xl">A Voice for the People</p>
 			</div>
-			<div className="border flex p-3 flex-wrap">
+			<div className="border flex p-10 flex-wrap">
 				<div className="flex flex-wrap xl:w-1/3 p-10 justify-center">
 					<h2 className="text-4xl font-bold font-bodySans py-10 ">
 						LET. ME. LIVE. is an independent service for reporting tenant harassment in New York City.
 					</h2>
 				</div>
 				<div className="flex flex-wrap xl:w-1/3 p-10 justify-center">
-					<h3 className="text-3xl font-bold font-bodySans py-5">Purpose</h3>
+					<h3 className="text-3xl font-bold font-bodySans py-5">Our Purpose</h3>
 					<ul>
 						<li className="text-2xl font-bodySans py-3">
 							To help end tenant harassment against low-income New Yorkers by making unfair housing practices visible and open to
 							accountability.
-						</li>
-					</ul>
-					<ul>
-						<h3 classname="text-3xl font-bold font-bodySans py-10">LET. ME. LIVE. Team</h3>
-						<div className="team">
+            </li>
+            <li className="text-2xl font-bodySans py-3">As NYC grapples with
+              the impact of COVID-19, there is another unfolding crisis of tenant harassment and displacement that is disproportionately
+              affecting low-income and immigrant communities.
+            </li>
+					</ul><div className="team">
+						<h3 classname="text-3xl font-bold font-bodySans py-5">LET. ME. LIVE. Team</h3>
 							<div className="team-role">
 								<img src="https://picsum.photos/id/237/200/300" alt="profile" />
 								<h2 className="pt-3 text-bg-charcoal text-xl font-bold">Shafee Ahmed</h2>
@@ -73,7 +75,6 @@ function AboutUs() {
 								</div>
 							</div>
 						</div>
-					</ul>
 				</div>
 			</div>
 		</div>
