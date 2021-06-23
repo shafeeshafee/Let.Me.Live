@@ -18,7 +18,7 @@ function ReportForm() {
 
 	const postData = async (id) => {
 		return await axios({
-			url: `http://localhost:5000/api/submit-report`,
+			url: `https://lml-reports.herokuapp.com/api/submit-report`,
 			method: "POST",
 			data: data,
 		})

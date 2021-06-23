@@ -3,7 +3,7 @@ const ReportModel = require("../models/Report");
 const getAllReports = async (req, res) => {
 	try {
 		const reports = await ReportModel.find();
-		return res.status(201).send({ reports });
+		return res.status(200).send({ reports });
 	} catch (err) {
 		res.status(500).send(`There was an error: ${err}`);
 	}
