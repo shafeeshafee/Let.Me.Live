@@ -1,1 +1,65 @@
 /* styles go in this folder */
+
+.team {
+  display: flex;
+  flex-direction: column;
+}
+
+.team h1 {
+  margin: 1.3em 0;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.team .avatar {
+  flex-wrap: wrap;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.team-role a {
+  font-size: 4em;
+	margin: 0.5em 1em;
+}
+
+.avatar .team-role {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+	color: rgba(0, 0, 0, 0.479);
+}
+
+.team-role h2 {
+  margin-top: 1em;
+}
+
+.links {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+@media only screen and (max-width: 1315px) {
+	.avatar img {
+		margin: 2em;
+	}
+}
+
+.avatar img {
+  text-align: center;
+	background: #ffffff;
+	border: 1px solid white;
+	border-radius: 25px;
+	box-shadow: -15px 15px 0px #b4408d, 15px -15px 0px #b4408d;
+  float: left;
+  width:  500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.avatar .team-role h3 {
+  margin: 1em;
+  color: #b4408d;
+  font-size: 1.2em;
+}
+
