@@ -1,4 +1,48 @@
+import { useState } from "react";
+import axios from "axios";
+
 function ReportForm() {
+	const [data, setData] = useState({
+		whatHappened: "",
+		location: "",
+		feeling: "",
+		soughtResources: false,
+		plan: "",
+	});
+
+	const [incidentInfo, setIncidentInfo] = useState("");
+	const [locationInfo, setLocationInfo] = useState("");
+	const [feelingInfo, setFeelingInfo] = useState("");
+	const [soughtHelpInfo, setSoughtHelpInfo] = useState(false);
+	const [nextSteps, setNextSteps] = useState("");
+
+	const postData = async (id) => {
+		return await axios({
+			url: `https://lml-reports.herokuapp.com/api/submit-report`,
+			method: "POST",
+			data: data,
+		})
+			.then((res) => {
+				console.log("Post successful.");
+			})
+			.catch((err) => console.log(err));
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setData({
+			whatHappened: incidentInfo,
+			location: locationInfo,
+			feeling: feelingInfo,
+			soughtResources: soughtHelpInfo,
+			plan: nextSteps,
+		});
+
+		postData();
+	};
+
+	console.log(data);
+
 	return (
 		<div className="pt-5 pb-24 bg-charcoal font-bodySans">
 			<div className="pt-10 pb-20">
@@ -13,7 +57,13 @@ function ReportForm() {
 						<p className="mb-3">What happened?</p>
 						<span className="text-sm text-gray-400">Describe the incident.</span>
 					</div>
-					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
+					<textarea
+						onChange={(e) => setIncidentInfo(e.target.value)}
+						className="text-jetblack"
+						name="w3review"
+						rows="4"
+						cols="50"
+					></textarea>
 				</div>
 				{/* where it happened */}
 				<div className="submit-subtitle">
@@ -21,7 +71,7 @@ function ReportForm() {
 						<p className="mb-3">Where did it take place?</p>
 						<span className="text-sm text-gray-400">We recommend vague information like zipcodes and not addresses.</span>
 					</div>
-					<input type="text" />
+					<input onChange={(e) => setLocationInfo(e.target.value)} type="text" />
 				</div>
 				{/* how it made u feel */}
 				<div className="submit-subtitle">
@@ -29,7 +79,7 @@ function ReportForm() {
 						<p className="mb-3">How did this incident make you feel?</p>
 						<span className="text-sm text-gray-400">Be honest about your experience. Let the world hear.</span>
 					</div>
-					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
+					<textarea onChange={(e) => setFeelingInfo(e.target.value)} className="" name="w3review" rows="4" cols="50"></textarea>
 				</div>
 				{/* sought resources */}
 				<div className="submit-subtitle">
@@ -38,10 +88,10 @@ function ReportForm() {
 						<span className="text-sm text-gray-400">It's okay if you didn't. We know it can be difficult.</span>
 					</div>
 					<div className="flex items-center">
-						<input className="m-3" type="radio" value="Yes" name="choice" />
+						<input onChange={(e) => setSoughtHelpInfo(e.target.value)} className="m-3" type="radio" value="Yes" name="choice" />
 						<p className="text-offwhite text-2xl">Yes</p>
 						<br />
-						<input className="m-3" type="radio" value="No" name="choice" />
+						<input onChange={(e) => setSoughtHelpInfo(e.target.value)} className="m-3" type="radio" value="No" name="choice" />
 						<p className="text-offwhite text-2xl">No</p>
 					</div>
 				</div>
@@ -51,13 +101,16 @@ function ReportForm() {
 						<p className="mb-3">What would you like done about this?</p>
 						<span className="text-sm text-gray-400">Preach.</span>
 					</div>
-					<textarea className="" name="w3review" rows="4" cols="50"></textarea>
+					<textarea onChange={(e) => setNextSteps(e.target.value)} className="" name="w3review" rows="4" cols="50"></textarea>
 				</div>
+				<div className="border-t-2 py-3 w-1/12 m-auto"></div>
+				<button
+					onClick={handleSubmit}
+					className="mt-5 bg-primaryYellow text-jetblack hover:bg-jetblack hover:text-offwhite smoothed font-bold py-3 px-5 rounded"
+				>
+					Submit
+				</button>
 			</form>
-			<div className="border-t-2 py-3 w-1/12 m-auto"></div>
-			<button className="mt-5 bg-primaryYellow text-jetblack hover:bg-jetblack hover:text-offwhite smoothed font-bold py-3 px-5 rounded">
-				Submit
-			</button>
 		</div>
 	);
 }

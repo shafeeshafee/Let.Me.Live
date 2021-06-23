@@ -7,7 +7,7 @@ function AllReports() {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:5000/api/viewreports")
+			.get("https://lml-reports.herokuapp.com/api/viewreports")
 			.then((res) => {
 				setReportData(res.data.reports);
 			})
