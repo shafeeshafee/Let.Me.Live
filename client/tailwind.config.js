@@ -4,6 +4,9 @@ module.exports = {
 	darkMode: false,
 	theme: {
 		extend: {
+			// backgroundImage: (theme) => ({
+			// 	lmlRally: "url('images/landing.jpg')",
+			// }),
 			colors: {
 				primaryYellow: "#FFD100",
 				shockingYellow: "#FFEE32",
