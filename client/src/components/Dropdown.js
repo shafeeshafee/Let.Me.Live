@@ -20,7 +20,7 @@ const Dropdown = ({ isOpen, toggle }) => {
 				FAQ
 			</Link>
 			<Link className="py-4 border" to="/aboutus">
-				about us
+				About Us
 			</Link>
 		</div>
 	);
