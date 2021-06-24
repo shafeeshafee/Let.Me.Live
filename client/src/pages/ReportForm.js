@@ -15,7 +15,7 @@ function ReportForm() {
 	const [incidentInfo, setIncidentInfo] = useState("");
 	const [locationInfo, setLocationInfo] = useState("");
 	const [feelingInfo, setFeelingInfo] = useState("");
-	const [soughtHelpInfo, setSoughtHelpInfo] = useState("");
+	const [soughtHelpInfo, setSoughtHelpInfo] = useState(false);
 	const [nextSteps, setNextSteps] = useState("");
 
 	const history = useHistory();
@@ -69,7 +69,7 @@ function ReportForm() {
 			soughtResources: soughtHelpInfo,
 			plan: nextSteps,
 		});
-	}, [incidentInfo, locationInfo, feelingInfo, nextSteps]);
+	}, [incidentInfo, locationInfo, soughtHelpInfo, feelingInfo, nextSteps]);
 
 	return (
 		<div className="pt-5 pb-24 bg-charcoal font-bodySans">
@@ -129,10 +129,9 @@ function ReportForm() {
 						<div className="flex items-center">
 							<input
 								className="text-jetblack text-2xl focus:outline-none border-none"
-								onChange={(e) => setSoughtHelpInfo(e.target.value)}
+								onChange={(e) => setSoughtHelpInfo(e.target.value ? "Yes" : "No")}
 								className="m-3"
 								type="radio"
-								value="Yes"
 								name="choice"
 							/>
 							<p className="text-offwhite text-2xl">Yes</p>
