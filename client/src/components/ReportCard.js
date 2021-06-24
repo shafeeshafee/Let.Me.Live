@@ -13,7 +13,7 @@ function ReportCard({ whatHappened, location, feeling, soughtResources, plan, ti
 			<p className="subtitle">How did this incident make you feel?</p>
 			<p className="makeEven truncated">{feeling}</p>
 			<p className="subtitle">Have you sought help for this problem?</p>
-			<p className="makeEven truncated">{soughtResources ? "I sought resources." : "I did not seek resources."}</p>
+			<p className="makeEven truncated">{soughtResources === "Yes" ? "I sought resources." : "I did not seek resources."}</p>
 			<p className="subtitle">What would you like done about this?</p>
 			<p className="makeEven truncated">{plan}</p>
 		</div>
