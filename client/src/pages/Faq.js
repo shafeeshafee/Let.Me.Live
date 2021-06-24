@@ -97,7 +97,7 @@ function Faq() {
 								{/* We can't as of now */}
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-									Donation instructions to support LET.ME.LIVE. will be anounced in the future. 
+									Donation instructions to support LET.ME.LIVE. will be anounced in the near future. 
 									</p>
 								</p>
 							</li>
