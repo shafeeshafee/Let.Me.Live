@@ -8,9 +8,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/shafeeshafee/Let.Me.Live">
-    <img src="" alt="Logo">
-  </a>
 
   <h1 align="center">Let.Me.Live</h1>
 
