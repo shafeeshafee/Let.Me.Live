@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Slide from "react-reveal/Slide";
 
@@ -17,6 +18,12 @@ function ReportForm() {
 	const [soughtHelpInfo, setSoughtHelpInfo] = useState("");
 	const [nextSteps, setNextSteps] = useState("");
 
+	const history = useHistory();
+
+	const redirect = () => {
+		history.push("/allreports");
+	};
+
 	const postData = async () => {
 		return await axios({
 			url: `https://lml-reports.herokuapp.com/api/submit-report`,
@@ -33,6 +40,7 @@ function ReportForm() {
 		e.preventDefault();
 
 		postData();
+		redirect();
 	};
 
 	function checkProperties(obj) {
@@ -46,13 +54,11 @@ function ReportForm() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		setData({
-			whatHappened: incidentInfo,
-			location: locationInfo,
-			feeling: feelingInfo,
-			soughtResources: soughtHelpInfo,
-			plan: nextSteps,
-		});
+
+		setData([
+			...data,
+			{ whatHappened: incidentInfo, location: locationInfo, feeling: feelingInfo, soughtResources: soughtHelpInfo, plan: nextSteps },
+		]);
 	};
 
 	useEffect(() => {
@@ -142,7 +148,6 @@ function ReportForm() {
 							<p className="text-offwhite text-2xl">No</p>
 						</div>
 					</div>
-					{/* next steps */}
 					<div className="submit-subtitle">
 						<div className="makeEven mb-2 flex flex-col items-start justify-center">
 							<p className="mb-3">What would you like done about this?</p>
@@ -158,11 +163,6 @@ function ReportForm() {
 					</div>
 					<div className="border-t-2 py-3 w-1/12 m-auto"></div>
 					<div className="flex flex-col justify-center items-center">
-						{/* if everything in data is filled out,
-							then show the confirm button
-							
-						*/}
-
 						{!checkProperties(data) ? (
 							<button
 								onClick={handleSubmit}

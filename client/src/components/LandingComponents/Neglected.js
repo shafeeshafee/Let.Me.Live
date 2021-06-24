@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Neglected() {
 	return (
 		<div className="bg-charcoal p-0 lg:py-24 flex justi flex-wrap justify-center pb-10 items-center">
-			<div className="w-full">
+			<div className="xl:w-1/3 w-full">
 				<div className="max-w-md py-4 px-8 bg-white shadow-lg rounded-2xl transform lg:-skew-y-3 my-20">
 					<div className="flex justify-center md:justify-end -mt-16">
 						<img

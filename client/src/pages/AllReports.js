@@ -6,13 +6,21 @@ import Fade from "react-reveal/Fade";
 function AllReports() {
 	const [reportData, setReportData] = useState([]);
 
-	useEffect(() => {
+	const fetchData = () => {
 		axios
 			.get("https://lml-reports.herokuapp.com/api/viewreports")
 			.then((res) => {
-				setReportData(res.data.reports);
+				setReportData(res.data.reports.reverse());
 			})
 			.catch((err) => console.log("Error: " + err));
+	};
+
+	useEffect(() => {
+		fetchData();
+	}, []);
+
+	useEffect(() => {
+		fetchData();
 	}, []);
 
 	return (

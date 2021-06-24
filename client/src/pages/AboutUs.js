@@ -102,7 +102,7 @@ function AboutUs() {
 							alt="profile"
 						/>
 						<h2 className="pt-3 text-white sm:text-jetblack text-xl font-bold">Jahaziel Israel</h2>
-						<h3 className="pt-3 text-white sm:text-jetblack text-md">UI UX Engineer</h3>
+						<h3 className="pt-3 text-white sm:text-jetblack text-md">Project Manager</h3>
 						<div className="p-5">
 							<a
 								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3 text-white sm:text-jetblack"
