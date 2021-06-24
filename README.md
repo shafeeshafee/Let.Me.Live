@@ -79,31 +79,6 @@ Let.Me.Live
     <img src="" alt="Logo">
   </a>
 
-## Wireframes - Desktop
-
-<a href="https://github.com/shafeeshafee/Let.Me.Live">
-    <img src="" alt="Logo">
-  </a>
- 
- ## Wireframes - Tablet
-
- <a href="https://github.com/shafeeshafee/Let.Me.Live">
-    <img src="src\images\tablet.png" alt="Logo">
-  </a>
-
-## Wireframes - Mobile
-
-  <a href="https://github.com/shafeeshafee/Let.Me.Live">
-    <img src="" alt="Logo">
-  </a>
-
-## Component Hierarchy
-
-<a href="https://github.com/shafeeshafee/Let.Me.Live">
-  <img src="" alt="ComponentHierachy">
-  </a>
-
-
 ## MVP
 
 The MVP version will have the following features:
@@ -124,16 +99,7 @@ This project was conceptualized by building wireframes and prototypes using Figm
 
 - [JavaScript](https://javascript.com)
 - [ReactJS](https://reactjs.org)
-- [Material UI](https://material-ui.com/)
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- [Figma](https://www.figma.com/)
-- [Adobe Photoshop](https://www.adobe.com/products/photoshop.html)
-- [Img Shields](https://shields.io)
-- [FontAwesome](https://fontawesome.com/)
+- Node, Mongo, Express
 
 <!-- CONTACT -->
 
