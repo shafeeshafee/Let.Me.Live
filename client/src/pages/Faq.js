@@ -34,8 +34,7 @@ function Faq() {
 								<p className="text-lg font-semibold mb-2 leading-6 text-tkhpurple font-headings">What is Let.Me.Live?</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt reprehenderit saepe cum fuga expedita, officia
-										maiores eos tempora veritatis, dignissimos ad culpa quia omnis atque corrupti maxime, sint accusamus.
+                  Let.Me.Live is an online app offering a platform for tenants to anonymously report tenant harassment in New York City.
 									</p>
 								</p>
 							</li>
@@ -47,8 +46,7 @@ function Faq() {
 								</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, impedit. Magni cumque aliquid eos doloremque,
-										quas neque ipsa beatae officia distinctio sunt tempore minus ducimus repellendus nemo adipisci ad maiores?
+                  Let.Me.Live. is not involved with any private companies, real estate related industries, or other entities for profit.
 									</p>
 								</p>
 							</li>
@@ -61,8 +59,7 @@ function Faq() {
 								</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas, harum laboriosam corporis aut, quasi magnam deleniti
-										culpa, facere error cupiditate dolorem. Voluptatem recusandae soluta perspiciatis nesciunt ad dolorem possimus..
+										At this moment, Let.Me.Live. serves the residents of New York City. Other cities  
 									</p>
 								</p>
 							</li>
@@ -74,8 +71,7 @@ function Faq() {
 								</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, modi! Reiciendis voluptate quis enim quibusdam labore
-										ipsam voluptatem iste molestiae assumenda, suscipit ex eius minus earum porro adipisci corporis laboriosam.
+                  Let.Me.Live. wants to provide an informational section that connects users with tenant harrasmment related resources. Along with making our service more inclusive, by incorporating support for the most common languages spoken in New York City. 
 									</p>
 								</p>
 							</li>
@@ -101,8 +97,7 @@ function Faq() {
 								{/* We can't as of now */}
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, modi! Reiciendis voluptate quis enim quibusdam labore
-										ipsam voluptatem iste molestiae assumenda, suscipit ex eius minus earum porro adipisci corporis laboriosam.
+									Donation instructions to support LET.ME.LIVE. will be anounced in the future. 
 									</p>
 								</p>
 							</li>
