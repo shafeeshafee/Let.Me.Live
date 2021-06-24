@@ -12,16 +12,6 @@
   <h1 align="center">Let.Me.Live</h1>
 
   <p align="center">
-    What are you in the mood to watch?
-    <br />
-    <a href="https://github.com/shafeeshafee/Let.Me.Live"><strong>🔍Explore the Docs »</strong></a>
-    <br />
-    <br />
-    <a href="">👀 View Demo</a>
-    ·
-    <a href="https://github.com/shafeeshafee/Let.Me.Live">🐛Report Bug</a>
-    ·
-    <a href="https://github.com/shafeeshafee/Let.Me.Live">✍🏽Request Feature</a>
   </p>
 </p>
 
