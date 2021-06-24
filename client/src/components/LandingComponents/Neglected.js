@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 function Neglected() {
 	return (
 		<div className="bg-charcoal p-0 lg:py-24 flex justi flex-wrap justify-center pb-10 items-center">
-			<div className="xl:w-1/3 w-full">
+			<div className="flex justify-center w-full lg:w-1/2 xl:w-1/3">
 				<div className="max-w-md py-4 px-8 bg-white shadow-lg rounded-2xl transform lg:-skew-y-3 my-20">
 					<div className="flex justify-center md:justify-end -mt-16">
 						<img
 							className="lg:w-56 lg:h-56 object-cover rounded-full border-4 border-shockingYellow transform lg:-skew-y-3"
-							src="https://images.unsplash.com/photo-1621624666561-84d0107001dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+							src="images/man.jpg"
 						/>
 					</div>
 					<div>
