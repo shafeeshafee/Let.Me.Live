@@ -17,11 +17,11 @@ function AboutUs() {
 					<h1 className="text-6xl font-bold font-bodySans">A Voice for the People</h1>
 				</div>
 				<hr />
-				<h2 className="text-4xl font-bold font-bodySans py-10 ">
-					LET. ME. LIVE. is an independent service for anonymously reporting tenant harassment in New York City.
+				<h2 className="text-lg lg:text-4xl font-bold font-bodySans py-10 px-10 sm:px-0">
+					LET. ME. LIVE. is an independent service for anonymously reporting tenant harassment in New York City
 				</h2>
 				<div className="protest font-headerSans">
-					<div className="flex flex-col justify-center w-full lg:w-1/3 m-auto text-justify break-words bg-black px-10 xl:h-screen items-center text-3xl text-white">
+					<div className="flex flex-col justify-center w-full lg:w-1/3 m-auto text-justify break-words bg-black px-10 xl:h-screen items-center text-xl lg:text-3xl text-white">
 						<h3 className="text-4xl font-bold py-5 uppercase font-bodySans">It's Time For A Change</h3>
 						<p className="py-3">
 							Let's help end tenant harassment against low-income New Yorkers by making unfair housing practices visible and open to
@@ -52,26 +52,36 @@ function AboutUs() {
 				<div className="border border-t-2 border-b-0 border-l-0 border-r-0 py-10 m-auto hidden lg:block w-1/3 border-gray-400 opacity-50"></div>
 				<div className="flex flex-wrap w-11/12 justify-center items-center m-auto pt-10">
 					<div className="bg-jetblack sm:bg-white flex flex-col justify-center items-center px-10 w-full lg:w-auto pt-10 lg:pt-0">
-						<img className="h-24 md:h-36 lg:h-64 w-auto rounded-xs sm:rounded-full" src="images/profiles/Shafee.jpeg" alt="profile" />
+						<img
+							className="h-24 md:h-36 shadow-xl lg:h-64 w-auto rounded-xs sm:rounded-full"
+							src="images/profiles/Shafee.jpeg"
+							alt="profile"
+						/>
 						<h2 className="pt-3 text-white sm:text-jetblack text-xl font-bold">Shafee Ahmed</h2>
-						<h3 className="pt-3 text-white sm:text-jetblack text-xl">Full Stack Engineer</h3>
+						<h3 className="pt-3 text-white sm:text-jetblack text-md">Full Stack Engineer</h3>
 						<div className="p-5">
-							<a className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3" href="https://www.linkedin.com/in/shafeelinks/">
+							<a
+								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3 text-white sm:text-jetblack"
+								href="https://www.linkedin.com/in/shafeelinks/"
+							>
 								{LinkedIn}
 							</a>
-							<a className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3" href="https://github.com/shafeeshafee">
+							<a
+								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3 text-white sm:text-jetblack"
+								href="https://github.com/shafeeshafee"
+							>
 								{GitHub}
 							</a>
 						</div>
 					</div>
 					<div className="bg-primaryYellow sm:bg-white flex flex-col justify-center items-center px-10 w-full lg:w-auto pt-10 lg:pt-0">
 						<img
-							className="h-24 md:h-36 lg:h-64 w-auto rounded-xs sm:rounded-full"
+							className="h-24 md:h-36 shadow-xl lg:h-64 w-auto rounded-xs sm:rounded-full"
 							src="images/profiles/StephaniePena.jpeg"
 							alt="profile"
 						/>
 						<h2 className="pt-3 text-bg-charcoal text-xl font-bold">Stephanie Peña</h2>
-						<h3 className="pt-3 text-bg-charcoal text-xl">Front End Developer</h3>
+						<h3 className="pt-3 text-bg-charcoal text-md">Frontend Developer</h3>
 						<div className="p-5">
 							<a
 								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3"
@@ -86,23 +96,37 @@ function AboutUs() {
 					</div>
 
 					<div className="bg-jetblack sm:bg-white flex flex-col justify-center items-center px-10 w-full lg:w-auto pt-10 lg:pt-0">
-						<img className="h-24 md:h-36 lg:h-64 w-auto rounded-xs sm:rounded-full" src="images/profiles/Jahaz.jpg" alt="profile" />
+						<img
+							className="h-24 md:h-36 shadow-xl lg:h-64 w-auto rounded-xs sm:rounded-full"
+							src="images/profiles/Jahaz.jpg"
+							alt="profile"
+						/>
 						<h2 className="pt-3 text-white sm:text-jetblack text-xl font-bold">Jahaziel Israel</h2>
-						<h3 className="pt-3 text-white sm:text-jetblack text-xl">UI UX Engineer</h3>
+						<h3 className="pt-3 text-white sm:text-jetblack text-md">Project Manager</h3>
 						<div className="p-5">
-							<a className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3" href="https://www.linkedin.com/in/jahazielbenisrael/">
+							<a
+								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3 text-white sm:text-jetblack"
+								href="https://www.linkedin.com/in/jahazielbenisrael/"
+							>
 								{LinkedIn}
 							</a>
-							<a className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3" href="https://github.com/blaquebeardcoder">
+							<a
+								className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3 text-white sm:text-jetblack"
+								href="https://github.com/blaquebeardcoder"
+							>
 								{GitHub}
 							</a>
 						</div>
 					</div>
 
 					<div className="bg-primaryYellow sm:bg-white flex flex-col justify-center items-center px-10 w-full lg:w-auto pt-10 lg:pt-0">
-						<img className="h-24 md:h-36 lg:h-64 w-auto rounded-xs sm:rounded-full" src="images/profiles/Naeem.jpg" alt="profile" />
+						<img
+							className="h-24 md:h-36 shadow-xl lg:h-64 w-auto rounded-xs sm:rounded-full"
+							src="images/profiles/Naeem.jpg"
+							alt="profile"
+						/>
 						<h2 className="pt-3 text-bg-charcoal text-xl font-bold">Naeem Shafi</h2>
-						<h3 className="pt-3 text-bg-charcoal text-xl">Frontend Web Developer</h3>
+						<h3 className="pt-3 text-bg-charcoal text-md">Frontend Developer</h3>
 						<div className="p-5">
 							<a className="text-lg md:text-2xl lg:text-4xl xl:text-6xl px-3" href="https://www.linkedin.com/in/naeem-s-93a35b67/">
 								{LinkedIn}

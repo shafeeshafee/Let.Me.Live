@@ -10,6 +10,9 @@ const Dropdown = ({ isOpen, toggle }) => {
 			<Link className="py-4 border" to="/">
 				Home
 			</Link>
+			<Link className="py-4 border" to="/resources">
+				Resources
+			</Link>
 			<Link className="py-4 border" to="/allreports">
 				View Reports
 			</Link>

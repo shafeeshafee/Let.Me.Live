@@ -30,7 +30,7 @@ const Navbar = ({ toggle }) => {
 
 	return (
 		<nav
-			className={`font-bodySans font-bold text-lg bg-shockingYellow z-40 top-0 flex justify-between items-center h-24 text-black shadow-sm header-font transition duration-1000 ease-in-out ${dropShadow}`}
+			className={`font-bodySans font-bold text-sm lg:text-lg bg-shockingYellow z-40 top-0 flex justify-between items-center h-24 text-black shadow-sm header-font transition duration-1000 ease-in-out ${dropShadow}`}
 			role="navigation"
 		>
 			<div className="flex py-5">
@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
 			<Link to="/" className="flex items-center text-lg">
 				<div>
 					<Link to="/">
-						<img src="images/logo.png" alt="logo" />
+						<img className="hidden xl:block" src="images/logo.png" alt="logo" />
 					</Link>
 				</div>
 			</Link>
@@ -62,9 +62,13 @@ const Navbar = ({ toggle }) => {
 			</div>
 			<div className="pr-8 xl:flex md:block hidden">
 				<div className="flex">
+					<Link className="mx-3" to="/resources">
+						<p>Resources</p>
+					</Link>
 					<Link className="mx-3" to="/allreports">
 						<p>View Reports</p>
 					</Link>
+
 					<Link className="mx-3" to="/report">
 						<p>Submit a Report</p>
 					</Link>

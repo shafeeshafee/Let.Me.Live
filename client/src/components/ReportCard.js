@@ -1,8 +1,8 @@
 function ReportCard({ whatHappened, location, feeling, soughtResources, plan, time }) {
 	return (
-		<div className="font-headerSans border-4 px-10 py-5">
+		<div className="font-headerSans border-4 px-10 py-5 w-full">
 			<div className="">
-				<p className="font-bodySans font-bold my-6 bg-jetblack text-primaryYellow w-1/2 p-2">
+				<p className="font-bodySans font-bold my-6 bg-jetblack text-primaryYellow w-10/12 p-2">
 					{time.slice(0, 10)} | {location}
 				</p>
 			</div>

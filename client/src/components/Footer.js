@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
 	return (
 		<div>
@@ -19,10 +21,18 @@ function Footer() {
 					</div>
 					<div className="flex flex-col">
 						<div className="flex mt-24 mb-12 flex-row justify-between">
-							<a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</a>
-							<a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Services</a>
-							<a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Why us</a>
-							<a className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Contact</a>
+							<Link to="/aboutus" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+								About
+							</Link>
+							<Link to="/" className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">
+								FAQ
+							</Link>
+							<a
+								href="mailto:blaquebeardcoder@gmail.com?subject=LetMeLive Feedback"
+								className="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase"
+							>
+								Contact
+							</a>
 							<div className="flex flex-row space-x-8 items-center justify-between">
 								<a>
 									<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
