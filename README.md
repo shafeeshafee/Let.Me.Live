@@ -73,11 +73,9 @@
 
 ## Description
 
-Let.Me.Live
+### Let.Me.Live
 
- <a href="https://github.com/shafeeshafee/Let.Me.Live">
-    <img src="" alt="Logo">
-  </a>
+Let.Me.Live is an online app offering a platform for tenants to anonymously report tenant harassment in New York City.
 
 ## MVP
 
