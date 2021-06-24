@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Neglected() {
 	return (
 		<div className="bg-charcoal p-0 lg:py-24 flex justi flex-wrap justify-center pb-10 items-center">
-			<div className="xl:w-1/3 w-full">
+			<div className="w-full">
 				<div className="max-w-md py-4 px-8 bg-white shadow-lg rounded-2xl transform lg:-skew-y-3 my-20">
 					<div className="flex justify-center md:justify-end -mt-16">
 						<img
@@ -37,7 +37,7 @@ function Neglected() {
 					You don't have to be alone. Share your story with the world
 				</p>
 				<Link to="/report">
-					<p className="flex m-auto lg:float-right items-center bg-primaryYellow w-5/12 text-2xl rounded-lg text-charcoal font-bold font-bodySans drop-shadow-2xl mt-6 px-5 py-2 hover:bg-gray-800 hover:text-offwhite smoothed shadowed">
+					<p className="flex m-auto lg:float-right items-center bg-primaryYellow w-5/12 text-lg sm:text-xl rounded-lg text-charcoal font-bold font-bodySans drop-shadow-2xl mt-6 px-5 py-2 hover:bg-gray-800 hover:text-offwhite smoothed shadowed">
 						Submit a Report <img src="https://www.svgrepo.com/show/115104/paper.svg" className="ml-5 py-3 w-6 h-auto" alt="" />
 					</p>
 				</Link>

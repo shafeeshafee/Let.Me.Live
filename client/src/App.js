@@ -10,6 +10,7 @@ import AllReports from "./pages/AllReports";
 import ReportForm from "./pages/ReportForm";
 import Faq from "./pages/Faq";
 import AboutUs from "./pages/AboutUs";
+import Resources from "./pages/Resources";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,9 @@ function App() {
 			<Switch>
 				<Route exact path="/">
 					<Landing />
+				</Route>
+				<Route exact path="/resources">
+					<Resources />
 				</Route>
 				<Route exact path="/allreports">
 					<AllReports />
