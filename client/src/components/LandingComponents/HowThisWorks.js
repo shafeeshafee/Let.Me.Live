@@ -8,21 +8,21 @@ function HowThisWorks() {
 				<div>
 					<HowItWorksCard
 						title="We keep it anonymous"
-						text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sequi tenetur. Eum dolore facilis quasi reiciendis laborum quibusdam cumque obcaecati, unde numquam expedita. Eveniet porro inventore repellendus error eaque officia."
+						text="You don't have to reveal who you are. Here, you are safe to be honest and share your story with the world."
 						image="https://picsum.photos/500/300"
 					/>
 				</div>
 				<div>
 					<HowItWorksCard
 						title="Let the world know"
-						text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sequi tenetur. Eum dolore facilis quasi reiciendis laborum quibusdam cumque obcaecati, unde numquam expedita. Eveniet porro inventore repellendus error eaque officia."
+						text="When there is injustice happening, to keep it inside would be injustice to our communities. Let your story be heard. The first step to solving tenant harassment is to show the world."
 						image="https://picsum.photos/500/300"
 					/>
 				</div>
 				<div>
 					<HowItWorksCard
 						title="End tenant harassment"
-						text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sequi tenetur. Eum dolore facilis quasi reiciendis laborum quibusdam cumque obcaecati, unde numquam expedita. Eveniet porro inventore repellendus error eaque officia."
+						text="Whether now or in the future, tenant harassment must come to an end. Especially for those who are from disadvantaged communities due to gentrification and systemtic racism."
 						image="https://picsum.photos/500/300"
 					/>
 				</div>

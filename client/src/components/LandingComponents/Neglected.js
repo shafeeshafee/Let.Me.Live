@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Neglected() {
 	return (
 		<div className="bg-charcoal p-0 lg:py-24 flex justi flex-wrap justify-center pb-10 items-center">
@@ -34,11 +36,11 @@ function Neglected() {
 				<p className="pt-10 p-3 text-md lg:text-4xl text-offwhite text-center lg:text-right">
 					You don't have to be alone. Share your story with the world
 				</p>
-				<a href="https://www.cssny.org/news/entry/addressing-the-eviction-epidemic-2017-analysis" target="_blank" rel="noopener noreferrer">
+				<Link to="/report">
 					<p className="flex m-auto lg:float-right items-center bg-primaryYellow w-5/12 text-2xl rounded-lg text-charcoal font-bold font-bodySans drop-shadow-2xl mt-6 px-5 py-2 hover:bg-gray-800 hover:text-offwhite smoothed shadowed">
 						Submit a Report <img src="https://www.svgrepo.com/show/115104/paper.svg" className="ml-5 py-3 w-6 h-auto" alt="" />
 					</p>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
