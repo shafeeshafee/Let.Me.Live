@@ -34,7 +34,7 @@ function Faq() {
 								<p className="text-lg font-semibold mb-2 leading-6 text-tkhpurple font-headings">What is Let.Me.Live?</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-                  Let.Me.Live is an online app offering a platform for tenants to anonymously report tenant harassment in New York City.
+                  Let.Me.Live is an online app offering a platform for tenants to anonymously report tenant harassment in New York City. 
 									</p>
 								</p>
 							</li>
@@ -59,7 +59,7 @@ function Faq() {
 								</p>
 								<p className="mt-2">
 									<p className="text-base leading-6 text-gray-500">
-										At this moment, Let.Me.Live. serves the residents of New York City. Other cities  
+										At this moment, Let.Me.Live. serves the residents of New York City. In the future, other cities will be included.   
 									</p>
 								</p>
 							</li>
